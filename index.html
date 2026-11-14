@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#dff2ff"><meta name="description" content="برنامه ورزشی شخصی‌سازی‌شده BlueFit">
+<link rel="manifest" href="/manifest.json"><link rel="stylesheet" href="/styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='28' fill='%2357b9f4'/%3E%3Cpath d='M20 52h60M32 38v28m36-28v28' stroke='white' stroke-width='8' stroke-linecap='round'/%3E%3C/svg%3E">
+<title>BlueFit | همراه تمرینی تو</title>
+</head>
+<body>
+<div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+<header class="topbar glass"><a class="brand" href="#"><span class="brand-mark">✳</span> BlueFit</a><button id="installBtn" class="install-btn hidden">نصب اپ</button><span class="today" id="todayLabel"></span></header>
+<main>
+<section class="hero reveal">
+<div class="hero-copy"><span class="eyebrow">فضای شخصی تناسب اندام</span><h1>هر روز، یک قدم<br><span>قوی‌تر از دیروز.</span></h1><p>برنامه‌ای که با هدف‌ها، شرایط و ریتم زندگی تو هماهنگ می‌شود.</p><button class="primary-btn" id="startOnboarding">ساخت برنامه من <span>←</span></button></div>
+<div class="hero-art" aria-hidden="true"><div class="orb orb-a"></div><div class="orb orb-b"></div><div class="hero-symbol">✳</div><div class="float-pill">حرکت کن، بهتر شو</div></div>
+</section>
+<section class="stats-grid reveal" id="stats">
+<article class="stat glass"><span>برنامه‌های ذخیره‌شده</span><strong id="savedCount">۰</strong><small>مجموع برنامه‌ها</small></article>
+<article class="stat glass"><span>جلسات تکمیل‌شده</span><strong id="doneCount">۰</strong><small>قدم‌های ثبت‌شده</small></article>
+<article class="stat glass"><span>هدف این هفته</span><strong id="weeklyGoal">۳</strong><small>جلسه پیشنهادی</small></article>
+</section>
+<section class="section reveal" id="planSection">
+<div class="section-heading"><div><span class="eyebrow">شروع هوشمند</span><h2>برنامه مناسب تو</h2></div><span class="section-note">شخصی‌سازی‌شده، نه یک نسخه برای همه</span></div>
+<div class="feature-card glass"><div class="feature-icon">✦</div><div class="feature-text"><h3>اول خودت را بشناسیم</h3><p>با چند پرسش کوتاه درباره هدف، تجربه، زمان و امکاناتت، یک برنامه متعادل و قابل‌تغییر می‌سازیم.</p></div><button class="round-btn" id="beginQuiz" aria-label="شروع پرسش‌ها">←</button></div>
+</section>
+<section class="section reveal hidden" id="quizSection">
+<div class="section-heading"><div><span class="eyebrow">پروفایل تمرینی</span><h2>برنامه‌ات را بساز</h2></div><span class="step-label" id="stepLabel">۱ از ۵</span></div>
+<div class="progress-track"><div id="quizProgress"></div></div>
+<div class="quiz-card glass"><div id="questionArea"></div><div class="quiz-actions"><button class="secondary-btn" id="backQuestion">قبلی</button><button class="primary-btn" id="nextQuestion">ادامه <span>←</span></button></div></div>
+</section>
+<section class="section reveal hidden" id="resultSection">
+<div class="section-heading"><div><span class="eyebrow">پیشنهاد BlueFit</span><h2>برنامه پیشنهادی تو</h2></div></div><div id="generatedPlan"></div>
+</section>
+<section class="section reveal" id="savedSection">
+<div class="section-heading"><div><span class="eyebrow">کتابخانه شخصی</span><h2>برنامه‌های من</h2></div><span class="section-note">روی دستگاه خودت ذخیره می‌شوند</span></div><div id="savedPlans" class="saved-list"><div class="empty-state glass"><span>▱</span><p>هنوز برنامه‌ای ذخیره نکرده‌ای.</p><small>با ساخت اولین برنامه، اینجا پیدایش می‌کنی.</small></div></div>
+</section>
+<section class="section reveal">
+<div class="section-heading"><div><span class="eyebrow">یادآوری دوستانه</span><h2>پیشرفت، با تداوم ساخته می‌شود</h2></div></div>
+<div class="quote-card glass"><span class="quote-mark">“</span><p>قرار نیست هر روز عالی باشی؛ فقط کافی است قدم بعدی را برداری.</p><span class="quote-caption">BlueFit · همراه مسیر تو</span></div>
+</section>
+</main>
+<footer>ساخته‌شده برای حرکت بهتر <span>✳</span></footer>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="/app.js"></script>
+</body></html>
