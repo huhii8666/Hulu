@@ -1,0 +1,9 @@
+{
+  "appId": "com.bluefit.app",
+  "appName": "BlueFit",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "android": {
+    "backgroundColor": "#eaf6ff"
+  }
+}
