@@ -1,0 +1,19 @@
+{
+  "name": "BlueFit | همراه تمرینی تو",
+  "short_name": "BlueFit",
+  "description": "برنامه ورزشی شخصی‌سازی‌شده فارسی",
+  "lang": "fa",
+  "dir": "rtl",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#eaf6ff",
+  "theme_color": "#dff2ff",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
